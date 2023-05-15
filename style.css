@@ -13,6 +13,10 @@ h2 {
     margin-top: 200px;
 }
 
+b {
+    font-size: 28px;
+}
+
 
 /* grundeinstellungen */
 .flex {
@@ -37,7 +41,7 @@ h2 {
 
 .button-style {
     border: 1px solid rgb(241, 96, 13);
-    padding: 8px;
+    padding: 16px;
     cursor: pointer;
 }
 
@@ -87,15 +91,13 @@ footer a {
 /* alle einstellungen des spiels: */
 .ki-züge {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .match-main-card {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-right: 32px;
-    
+    align-items: center;   
 }
 
 .match-main-card img {
