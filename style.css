@@ -1,11 +1,78 @@
+/* globale einstellungen */
 body {
     margin: 0;
     min-height: 100vh;
     background-color: rgba(39, 36, 36, 0.83);
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
+h2 {
+    text-align: center;
+    margin-top: 200px;
+}
+
+
+/* grundeinstellungen */
+.flex {
+    display: flex;
+}
+
+.gap32 {
+    gap: 32px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.mt32 {
+    margin-top: 32px;
+}
+
+.gap8 {
+    gap: 8px;
+}
+
+.button-style {
+    border: 1px solid rgb(241, 96, 13);
+    padding: 8px;
+    cursor: pointer;
+}
+
+.button-style-small {
+    border: 1px solid rgb(241, 96, 13);
+    padding: 4px;
+}
+
+.fs32 {
+    font-size: 32px;
+}
+
+
+
+
+/* alle header einstellungen */
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: 16px;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+
+
+
+/* alle footer einstellungen */
 footer {
     margin-top: auto;
     color: orangered;
@@ -14,4 +81,32 @@ footer {
 footer a {
     text-decoration: none;
     color: orangered;
+}
+
+
+/* alle einstellungen des spiels: */
+.ki-züge {
+    display: flex;
+    justify-content: center;
+}
+
+.match-main-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 32px;
+    
+}
+
+.match-main-card img {
+    height: 35px;
+}
+
+.card {
+    border: 1px solid rgb(241, 96, 13);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

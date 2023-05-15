@@ -1,21 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="script-arrays.js"></script>
     <title>NIM-Game</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <div>NIM Spiel vs KI</div>
+        <div class="menu">
+            <div>Regeln</div>
+            <div>Optionen</div>
+        </div>
+    </header>
+
     <!-- hier wird der JS code eingefügt -->
     <div id="content"></div>
 
+
+
+
+    <!-- vorbereitung content -->
+
+
+    <section class="matches">
+        <div class="flex gap32 center">
+            <div class="button-style">Entferne 1</div>
+            <div class="button-style">Entferne 2</div>
+            <div class="button-style">Entferne 3</div>
+        </div>
+        <div class="flex center mt32">Anzahl Streichhölzer: 10</div>
+        <div class="flex center mt32">
+            <img src="./img/match.png" alt="streichholz-img">
+            <img src="./img/match.png" alt="streichholz-img">
+            <img src="./img/match.png" alt="streichholz-img">
+            <img src="./img/match.png" alt="streichholz-img">
+            <img src="./img/match.png" alt="streichholz-img">
+            <img src="./img/match.png" alt="streichholz-img">
+            <img src="./img/match.png" alt="streichholz-img">
+            <img src="./img/match.png" alt="streichholz-img">
+            <img src="./img/match.png" alt="streichholz-img">
+            <img src="./img/match.png" alt="streichholz-img">
+        </div>
+        <div class="flex center mt32 fs32">Spieler 0 : 0 KI</div>
+    </section>
+
+
+    <section>
+        <h2>Mögliche KI Züge:</h2>
+        <div class="ki-züge">
+
+            <div class="card">
+                <div class="match-main-card mt32">1 <img src="./img/match.png" alt="streichholz-img"></div>
+                <div class="flex mt32 gap8 button-style-small">1</div>
+            </div>
+            <div class="card">
+                <div class="match-main-card mt32">2 <img src="./img/match.png" alt="streichholz-img"></div>
+                <div class="flex mt32 gap8">
+                    <div class="button-style-small">1</div>
+                    <div class="button-style-small">2</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="match-main-card mt32">3 <img src="./img/match.png" alt="streichholz-img"></div>
+                <div class="flex mt32 gap8">
+                    <div class="button-style-small">1</div>
+                    <div class="button-style-small">2</div>
+                    <div class="button-style-small">3</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="match-main-card mt32"> 4 <img src="./img/match.png" alt="streichholz-img"></div>
+                <div class="flex mt32 gap8">
+                    <div class="button-style-small">1</div>
+                    <div class="button-style-small">2</div>
+                    <div class="button-style-small">3</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="match-main-card mt32"> 5 <img src="./img/match.png" alt="streichholz-img"></div>
+                <div class="flex mt32 gap8">
+                    <div class="button-style-small">1</div>
+                    <div class="button-style-small">2</div>
+                    <div class="button-style-small">3</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="match-main-card mt32"> 6 <img src="./img/match.png" alt="streichholz-img"></div>
+                <div class="flex mt32 gap8">
+                    <div class="button-style-small">1</div>
+                    <div class="button-style-small">2</div>
+                    <div class="button-style-small">3</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="match-main-card mt32"> 7 <img src="./img/match.png" alt="streichholz-img"></div>
+                <div class="flex mt32 gap8">
+                    <div class="button-style-small">1</div>
+                    <div class="button-style-small">2</div>
+                    <div class="button-style-small">3</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="match-main-card mt32"> 8 <img src="./img/match.png" alt="streichholz-img"></div>
+                <div class="flex mt32 gap8">
+                    <div class="button-style-small">1</div>
+                    <div class="button-style-small">2</div>
+                    <div class="button-style-small">3</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="match-main-card mt32"> 9 <img src="./img/match.png" alt="streichholz-img"></div>
+                <div class="flex mt32 gap8">
+                    <div class="button-style-small">1</div>
+                    <div class="button-style-small">2</div>
+                    <div class="button-style-small">3</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="match-main-card mt32"> 10 <img src="./img/match.png" alt="streichholz-img"></div>
+                <div class="flex mt32 gap8">
+                    <div class="button-style-small">1</div>
+                    <div class="button-style-small">2</div>
+                    <div class="button-style-small">3</div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- ende vorbereitung content -->
+
+
+
+
     <footer>
         <div>Credits:</div>
-        <div><a target="_blank" href="https://icons8.com/icon/Fl8Dt0zWWnxI/match">Match</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></div>
+        <div><a target="_blank" href="https://icons8.com/icon/Fl8Dt0zWWnxI/match">Match</a> icon by <a target="_blank"
+                href="https://icons8.com">Icons8</a></div>
     </footer>
 </body>
+
 </html>
